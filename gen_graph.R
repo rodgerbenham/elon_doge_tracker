@@ -64,7 +64,7 @@ for (timeframe in c("15m", "1h", "4h")) {
     else {
        p <- p + scale_x_datetime(labels = label_date_short())
     }
-    p <- p + xlab("Date / Time (GMT)")
+    p <- p + xlab("Date / Time (AEST)")
     p <- p + ylab("$DOGE Price (USD)")
     p <- p + scale_colour_manual(name=paste0(timeframe, " Period"), labels=c("Loss", "Gain"), values=c("#FF0000", "#00FF00"))
     p <- p + scale_fill_manual(name=paste0(timeframe, " Period"), labels=c("Loss", "Gain"), values=c("#FF0000", "#00FF00"))
